@@ -1,0 +1,8 @@
+{
+  "name": "impersonate",
+  "description": "Impersonate a person or character by researching their speaking style and adopting it for the session",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mustafa Petiwala"
+  }
+}

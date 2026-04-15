@@ -1,0 +1,13 @@
+{
+  "name": "mustafaabbas1-plugins",
+  "owner": {
+    "name": "Mustafa Petiwala"
+  },
+  "plugins": [
+    {
+      "name": "impersonate",
+      "source": "./plugins/impersonate",
+      "description": "Impersonate a person or character by researching their speaking style and adopting it for the session"
+    }
+  ]
+}
