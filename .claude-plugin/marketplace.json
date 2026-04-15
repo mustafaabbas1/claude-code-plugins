@@ -5,8 +5,8 @@
   },
   "plugins": [
     {
-      "name": "impersonate",
-      "source": "./plugins/impersonate",
+      "name": "fun",
+      "source": "./plugins/fun",
       "description": "Impersonate a person or character by researching their speaking style and adopting it for the session"
     }
   ]

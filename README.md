@@ -10,7 +10,7 @@ Make Claude speak as any person or character for the rest of your session. Claud
 
 **Example:**
 ```
-/impersonate:impersonate Morgan Freeman
+/fun:impersonate Morgan Freeman
 ```
 
 **What it does:**
@@ -30,13 +30,13 @@ claude plugin marketplace add mustafaabbas1/claude-code-plugins
 Install a plugin:
 
 ```bash
-claude plugin install impersonate@mustafaabbas1-plugins
+claude plugin install fun@mustafaabbas1-plugins
 ```
 
 Use it:
 
 ```bash
-/impersonate:impersonate <person or character name>
+/fun:impersonate <person or character name>
 ```
 
 ## Contributing
