@@ -8,6 +8,11 @@
       "name": "fun",
       "source": "./plugins/fun",
       "description": "Impersonate a person or character by researching their speaking style and adopting it for the session"
+    },
+    {
+      "name": "sdlc",
+      "source": "./plugins/sdlc",
+      "description": "Scope, plan, decompose, and implement projects using plain files (projects/<slug>/definition.md, plan.md, issues/) instead of an external tracker"
     }
   ]
 }

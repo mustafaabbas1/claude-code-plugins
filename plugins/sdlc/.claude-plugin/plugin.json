@@ -1,0 +1,8 @@
+{
+  "name": "sdlc",
+  "description": "Scope, plan, decompose, and implement projects using plain files (projects/<slug>/definition.md, plan.md, issues/) instead of an external tracker",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mustafa Petiwala"
+  }
+}
