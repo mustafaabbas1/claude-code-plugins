@@ -13,6 +13,11 @@
       "name": "sdlc",
       "source": "./plugins/sdlc",
       "description": "Scope, plan, decompose, and implement projects using plain files (projects/<slug>/definition.md, plan.md, issues/) instead of an external tracker"
+    },
+    {
+      "name": "code-monkey",
+      "source": "./plugins/code-monkey",
+      "description": "Fan a PR out to eight parallel review sub-agents (security, correctness/concurrency, breaking-change/API compatibility, test quality, performance, code structure, maintainability, general code-review), synthesize their findings into one prioritized list, and walk through it with the user one item at a time"
     }
   ]
 }

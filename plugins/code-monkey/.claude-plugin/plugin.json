@@ -1,0 +1,8 @@
+{
+  "name": "code-monkey",
+  "description": "Fan a PR out to six parallel review sub-agents (security, readability, DRY, SOLID/design patterns, test quality, general code-review) and synthesize their findings into one prioritized recommendation list",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mustafa Petiwala"
+  }
+}

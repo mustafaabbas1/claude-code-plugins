@@ -46,6 +46,32 @@ a real GitHub PR for the code change itself.
 /sdlc:implement sp-api-listings-ingestion/03
 ```
 
+### Code Monkey
+
+Fans a PR out to eight parallel review sub-agents, reconciles their
+findings into one prioritized list, then walks through it with you one
+item at a time.
+
+```
+/code-monkey:cleanup <PR reference>
+```
+
+**What it does:**
+1. Spawns 8 sub-agents in parallel, each given the PR reference and a
+   summary of what it contains, in priority order (also the tie-break order):
+   1. Runs `/security-review` and reports findings
+   2. Correctness/error-handling and concurrency/race conditions
+   3. Breaking changes / API compatibility
+   4. Test quality: missing coverage, config-only tests, unnecessary mocking/patching, tests that could be parameterized
+   5. Performance/efficiency
+   6. Code structure: DRY, SOLID, Gang of Four design patterns
+   7. Maintainability: readability, observability, stale docs/naming drift
+   8. Runs `/code-review` and reports findings
+2. Merges overlapping findings into one prioritized list — conflicts are
+   broken using the order above (lower-numbered review wins)
+3. Walks through the list with you one recommendation at a time, waiting
+   for your call (fix / skip / discuss) before moving to the next
+
 ## Installation
 
 Add the marketplace:
@@ -59,6 +85,7 @@ Install a plugin:
 ```bash
 claude plugin install fun@mustafaabbas1-plugins
 claude plugin install sdlc@mustafaabbas1-plugins
+claude plugin install code-monkey@mustafaabbas1-plugins
 ```
 
 Use it:
@@ -66,6 +93,7 @@ Use it:
 ```bash
 /fun:impersonate <person or character name>
 /sdlc:define
+/code-monkey:cleanup <PR reference>
 ```
 
 ## Contributing
