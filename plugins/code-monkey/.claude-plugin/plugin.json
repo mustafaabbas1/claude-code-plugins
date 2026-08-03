@@ -1,6 +1,6 @@
 {
   "name": "code-monkey",
-  "description": "Fan a PR out to six parallel review sub-agents (security, readability, DRY, SOLID/design patterns, test quality, general code-review) and synthesize their findings into one prioritized recommendation list",
+  "description": "Gated multi-angle cleanup and review — fan a PR, working diff, or named module out to eight parallel review sub-agents (security, correctness/concurrency, breaking changes, test quality, performance, code structure, maintainability, general code-review), synthesize one prioritized list, then walk it one approved item at a time",
   "version": "1.0.0",
   "author": {
     "name": "Mustafa Petiwala"
