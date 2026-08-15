@@ -77,7 +77,7 @@ If a change makes the code less readable to gain DRY, it's the wrong change. If 
 
 ## Walk through
 
-Present items **one at a time**: what, why, which review(s) surfaced it, a before/after snippet where useful, and an `AskUserQuestion` with the recommended option first. Wait for the user's call — fix / skip / discuss — before advancing. On approval: apply the edit, run tests and lint, verify, then move on. On skip: acknowledge and move on.
+Present items **one at a time**: what, why, which review(s) surfaced it, a before/after snippet where useful, and an `AskUserQuestion` with the recommended option first. Wait for the user's call — fix / skip / discuss — before advancing. Record all responses, reconcile them, and then apply all together at the end, being sure to run linter and tests between each fix.
 
 **On disagreement:** engage. Push back honestly if the user proposes something with poor cost/benefit (e.g. Template Method on three short parallel loops). Explain the trade-off, then defer to the user.
 
