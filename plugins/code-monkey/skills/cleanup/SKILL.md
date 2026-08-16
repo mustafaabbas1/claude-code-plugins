@@ -52,6 +52,8 @@ Instruct every sub-agent to **look outside the target** before reporting:
 - **Ripple effects.** If a change renames, extracts, or moves something, grep for callers, imports, and downstream usages. Cleanup that breaks unrelated call sites isn't cleanup.
 - **Consistency across parallel modules.** If the target is one of N parallel services/pages/components, read the other N-1 to spot naming, log-wording, or structural drift worth aligning.
 
+Sub-agents **must not** spawn agents of their own.
+
 ## Synthesize
 
 One prioritized list, not a concatenation:
